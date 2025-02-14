@@ -1,0 +1,1 @@
+Die Mitgliedstaaten müssen Sanktionen für Verstöße gegen nationale Maßnahmen gemäß dieser Richtlinie erlassen. Diese Sanktionen müssen wirksam, verhältnismäßig und abschreckend sein. Die Mitgliedstaaten müssen der Kommission bis zum 17. Januar 2025 diese Vorschriften und Maßnahmen mitteilen und ihr alle Änderungen unverzüglich melden.

@@ -1,0 +1,2 @@
+Die Kommission wird von einem Ausschuss unterstützt, der gemäß der Verordnung (EU) Nr. 182/2011 eingerichtet ist. Wenn auf diesen Absatz Bezug genommen wird, gilt Artikel 5 der Verordnung (EU) Nr. 182/2011. 
+Wenn die Stellungnahme des Ausschusses im schriftlichen Verfahren eingeholt wird, wird das Verfahren ohne Ergebnis beendet, wenn der Vorsitz des Ausschusses innerhalb der Frist zur Abgabe der Stellungnahme beschließt oder ein Ausschussmitglied dies verlangt.

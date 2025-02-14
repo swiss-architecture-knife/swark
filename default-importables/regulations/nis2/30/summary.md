@@ -1,0 +1,5 @@
+Die Mitgliedstaaten gewährleisten, dass neben den vorgeschriebenen Berichten gemäß Artikel 23 auch freiwillige Meldungen von wesentlichen und wichtigen Einrichtungen sowie anderen Einrichtungen über Sicherheitsvorfälle, Cyberbedrohungen und Beinahe-Vorfälle an CSIRTs oder gegebenenfalls an die zuständigen Behörden übermittelt werden können.
+
+Diese Meldungen werden gemäß den Verfahren von Artikel 23 bearbeitet, wobei die Mitgliedstaaten möglicherweise Priorität für Pflichtmeldungen vor freiwilligen Meldungen setzen können. CSIRTs und gegebenenfalls die zuständigen Behörden übermitteln die Informationen über diese Meldungen an die zentralen Anlaufstellen und gewährleisten dabei die Vertraulichkeit und den angemessenen Schutz der übermittelten Informationen.
+
+Freiwillige Meldungen dürfen, abgesehen von der Prävention, Aufdeckung und Verfolgung von Straftaten, nicht dazu führen, dass der meldenden Einrichtung zusätzliche Verpflichtungen auferlegt werden, die nicht bestehen würden, wenn die Meldung nicht erfolgt wäre.

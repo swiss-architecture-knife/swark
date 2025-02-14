@@ -1,0 +1,3 @@
+Um die einheitliche Anwendung von Artikel 21 Absätze 1 und 2 sicherzustellen, fördern die Mitgliedstaaten die Anwendung europäischer und internationaler Normen sowie technischer Spezifikationen für die Sicherheit von Netz- und Informationssystemen, ohne eine bestimmte Technologieart zu bevorzugen oder willkürlich aufzuerlegen.
+
+Die ENISA bietet in Zusammenarbeit mit den Mitgliedstaaten und gegebenenfalls nach Konsultation relevanter Interessenträger Beratung und erlässt Leitlinien zu den technischen Aspekten, die gemäß Absatz 1 zu berücksichtigen sind. Dies umfasst auch bestehende Normen, einschließlich nationaler Normen, die diese Aspekte abdecken könnten.

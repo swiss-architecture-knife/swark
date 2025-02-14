@@ -1,0 +1,67 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "swark/swark",
+    "type": "project",
+    "description": "The skeleton application for swark.",
+    "keywords": ["swark", "software", "system", "architecture", "documentation", "framework"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "dreitier/inspecting-k8s-lib": "@dev",
+        "laravel/tinker": "^2.10.1",
+        "swark/framework": "^0.1.1"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.24.1",
+        "laravel/pint": "^1.21",
+        "mockery/mockery": "^1.6.12",
+        "phpunit/phpunit": "^12.0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
+            "@php artisan vendor:publish --tag=swark-assets --ansi --force",
+            "@php artisan vendor:publish --tag=swark-stamdata --ansi --force",
+            "@php artisan filament:assets"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi",
+            "@php artisan storage:link"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
