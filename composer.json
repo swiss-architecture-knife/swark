@@ -9,7 +9,7 @@
         "php": "^8.4",
         "dreitier/inspecting-k8s-lib": "@dev",
         "laravel/tinker": "^2.10.1",
-        "swark/framework": "^0.1.1"
+        "swark/framework": "^0.1.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.24.1",
@@ -35,6 +35,9 @@
             "@php artisan package:discover --ansi"
         ],
         "post-update-cmd": [
+            "@setup-swark"
+        ],
+        "setup-swark": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
             "@php artisan vendor:publish --tag=swark-assets --ansi --force",
             "@php artisan vendor:publish --tag=swark-stamdata --ansi --force",

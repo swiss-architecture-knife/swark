@@ -63,6 +63,28 @@ jobs:
         with:
           commit_message: "Update version to v${{ steps.version.outputs.version }}"
 
+      # Create a package before we do any tagging
+      # Taken from https://github.com/monicahq/monica/blob/main/.github/workflows/release.yml
+
+# not now
+#      - name: Import key
+#        run: echo -e "$GPG_KEY" | gpg --batch --yes --import -
+#        env:
+#          GPG_KEY: ${{ secrets.GPG_KEY }}
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+          extensions: dom, curl, libxml, mbstring, zip, pdo, gd, :php-psr
+          ini-values: error_reporting=E_ALL
+          tools: composer:v2
+
+      - name: Create package
+        id: package
+        run: |
+          chmod +x scripts/ci/package.sh
+          scripts/ci/package.sh 'v${{ steps.version.outputs.version }}' $GITHUB_SHA
+
       - name: Create tagged version
         uses: rickstaa/action-create-tag@v1.7.2
         with:
@@ -112,6 +134,10 @@ jobs:
         env:
           RELEASE_NOTES: ${{ steps.generated-notes.outputs.release-notes }}
 
+#        env:
+#          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+#          GPG_FINGERPRINT: ${{ secrets.GPG_FINGERPRINT }}
+
       - name: Create release
         uses: softprops/action-gh-release@v2
         env:
@@ -122,6 +148,11 @@ jobs:
           body: ${{ steps.cleaned-notes.outputs.notes }}
           target_commitish: ${{ github.ref_name }}
           make_latest: "${{ github.ref_name == github.event.repository.default_branch }}"
+          files: |
+            ${{ steps.package.outputs.package }}
+            ${{ steps.package.outputs.package }}.asc
+            ${{ steps.package.outputs.package }}.sha512
+            ${{ steps.package.outputs.package }}.sha512.asc
 
   update-changelog:
     needs: release

@@ -20,4 +20,7 @@ yarn-error.log
 /.idea
 /.vscode
 /.zed
+/config/.release
+/config/.commit
+/config/.version
 composer.lock
