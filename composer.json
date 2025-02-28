@@ -9,7 +9,7 @@
         "php": "^8.4",
         "dreitier/inspecting-k8s-lib": "@dev",
         "laravel/tinker": "^2.10.1",
-        "swark/framework": "^0.1.3"
+        "swark/framework": "^0.1.4"
     },
     "require-dev": {
         "fakerphp/faker": "^1.24.1",
