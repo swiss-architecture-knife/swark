@@ -19,7 +19,7 @@ class ExampleTest extends TestCase
     #[Test]
     public function swark_is_available(): void
     {
-        $response = $this->get('/swark/strategy');
+        $response = $this->get('/swark/strategy/overview');
 
         $response->assertStatus(200);
     }
