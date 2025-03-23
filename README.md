@@ -27,11 +27,11 @@ Prior to executing `swark`, please install the following packages:
     # link public repository for created assets like diagrams
     $ php artisan storage:link
 
-    # import default content from storage/app/swark/_default
-    $ php artisan app:import 
+    # import default importables (regulations)
+    $ php artisan swark:import:datamodel ./default-importables
     
     # import custom content
-    $ php artisan app:import storage/app/swark/custom
+    $ php artisan app:import:content storage/app/swark/custom
 
     # create initial user
     $ php artisan make:filament-user --name=admin --email=admin@admin.com --password=<your password>
