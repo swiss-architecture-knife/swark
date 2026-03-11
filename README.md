@@ -3,7 +3,7 @@
 `swark` is a tool for software and IT architects to document their infrastructure and architecture in a readable and
 structured way.
 
-The vision for `swark` is to have a **tool** which combines parts of `LeanIX`, `Spark's Enterprise Architect`, `CMDBuild`
+The vision for `swark` is to have a **tool** which *combines* parts of `LeanIX`, `Spark's Enterprise Architect`, `CMDBuild`
 with usage of Markdown and the C4 model to give architects and their teams insight in their environment.
 
 ## Getting started
