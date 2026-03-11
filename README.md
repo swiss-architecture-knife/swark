@@ -13,13 +13,13 @@ with usage of Markdown and the C4 model to give architects and their teams insig
 Prior to executing `swark`, please install the following packages:
 
 
-```cpp
+```javascript
 # To create non-default PlantUML and other graphs
 $ sudo apt-get install \
     graphviz \
     default-jre
 aasdsad
-
+sdasdasd
 ```
 
 ### Installation
