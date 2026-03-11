@@ -3,45 +3,56 @@
 `swark` is a tool for software and IT architects to document their infrastructure and architecture in a readable and
 structured way.
 
-The vision for `swark` is to have a tool which combines parts of `LeanIX`, `Spark's Enterprise Architect`, `CMDBuild`
+The vision for `swark` is to have a **tool** which *combines* parts of `LeanIX`, `Spark's Enterprise Architect`, `CMDBuild`
 with usage of Markdown and the C4 model to give architects and their teams insight in their environment.
 
 ## Getting started
+
 ### Requirements
 
 Prior to executing `swark`, please install the following packages:
 
-    # To create non-default PlantUML and other graphs
-    $ sudo apt-get install \
-        graphviz \
-        default-jre
+
+```plain
+# To create non-default PlantUML and other graphs
+$ sudo apt-get install \
+    graphviz \
+    default-jre
+aasdsad
+sdasdasd
+```
 
 ### Installation
 
-    $ composer create-project --prefer-dist swark/swark my-awesome-architecture-documentation
-    
-    # edit .env variables
-    
-    $ php artisan migrate
 
-    # link public repository for created assets like diagrams
-    $ php artisan storage:link
+```
+$ composer create-project --prefer-dist swark/swark my-awesome-architecture-documentation
 
-    # import default importables (regulations)
-    $ php artisan swark:import:datamodel ./default-importables
-    
-    # import custom content
-    $ php artisan app:import:content storage/app/swark/custom
+# edit .env variables
 
-    # create initial user
-    $ php artisan make:filament-user --name=admin --email=admin@admin.com --password=<your password>
+$ php artisan migrate
 
-    $ php artisan serve 
+# link public repository for created assets like diagrams
+$ php artisan storage:link
+
+# import default importables (regulations)
+$ php artisan swark:import:datamodel ./default-importables
+
+# import custom content
+$ php artisan app:import:content storage/app/swark/custom
+
+# create initial user
+$ php artisan make:filament-user --name=admin --email=admin@admin.com --password=<your password>
+
+$ php artisan serve 
+```
 
 ### Open the UI
-Go to http://localhost:8000/admin and log in with the recent created admin user
+
+Go to [http://localhost:8000/admin](http://localhost:8000/admin) and log in with the recent created admin user
 
 Available URLs:
-- http://localhost:8000/: user interface
-- http://localhost:8000/admin: admin interface for stamdata-related things
-- http://localhost:8000/admin-compliance: admin interface for compliance-related stuff (findings, actions, regulations, chapters)
+
+- [http://localhost:8000/](http://localhost:8000/): user interface
+- [http://localhost:8000/admin](http://localhost:8000/admin): admin interface for stamdata-related things
+- [http://localhost:8000/admin-compliance](http://localhost:8000/admin-compliance): admin interface for compliance-related stuff (findings, actions, regulations, chapters)
