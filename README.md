@@ -18,6 +18,8 @@ Prior to executing `swark`, please install the following packages:
 $ sudo apt-get install \
     graphviz \
     default-jre
+
+
 ```
 
 ### Installation
