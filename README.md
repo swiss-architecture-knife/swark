@@ -11,8 +11,8 @@ After deploying swark (see below), go to http://localhost:8000/admin and log in.
 
 ## Deployment options
 ### Docker / Docker Compose
-Head over to our [https://github.com/swiss-architecture-knife/docker](swiss-architecture-knife/docker) repo to find instructions how to use the Docker image.
-It contains also working [https://github.com/swiss-architecture-knife/docker/tree/main/.examples/full](Docker Compose) examples.
+Head over to our [swiss-architecture-knife/docker](https://github.com/swiss-architecture-knife/docker) repo to find instructions how to use the Docker image.
+It contains also working [Docker Compose](https://github.com/swiss-architecture-knife/docker/tree/main/.examples/full) examples.
 
 ### Local development
 #### Requirements
