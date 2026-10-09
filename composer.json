@@ -8,7 +8,7 @@
     "require": {
         "php": "^8.4",
         "dreitier/inspecting-k8s-lib": "@dev",
-        "swark/framework": "0.x-dev || ^0.2.3"
+        "swark/framework": "0.x-dev || ^0.2.4"
     },
     "require-dev": {
         "fakerphp/faker": "^1.24.1",
