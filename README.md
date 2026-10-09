@@ -1,4 +1,4 @@
-## swark - Swiss Architecture Knife
+# swark - Swiss Architecture Knife
 
 `swark` is a tool for software and IT architects to document their infrastructure and architecture in a readable and
 structured way.
@@ -6,8 +6,16 @@ structured way.
 The vision for `swark` is to have a tool which combines parts of `LeanIX`, `Spark's Enterprise Architect`, `CMDBuild`
 with usage of Markdown and the C4 model to give architects and their teams insight in their environment.
 
-## Getting started
-### Requirements
+## Usage
+After deploying swark (see below), go to http://localhost:8000/admin and log in.
+
+## Deployment options
+### Docker / Docker Compose
+Head over to our [https://github.com/swiss-architecture-knife/docker](swiss-architecture-knife/docker) repo to find instructions how to use the Docker image.
+It contains also working [https://github.com/swiss-architecture-knife/docker/tree/main/.examples/full](Docker Compose) examples.
+
+### Local development
+#### Requirements
 
 Prior to executing `swark`, please install the following packages:
 
@@ -16,7 +24,7 @@ Prior to executing `swark`, please install the following packages:
         graphviz \
         default-jre
 
-### Installation
+#### Set up
 
     $ composer create-project --prefer-dist swark/swark my-awesome-architecture-documentation
     
@@ -38,8 +46,6 @@ Prior to executing `swark`, please install the following packages:
 
     $ php artisan serve 
 
-### Open the UI
-Go to http://localhost:8000/admin and log in with the recent created admin user
 
 Available URLs:
 - http://localhost:8000/: user interface
