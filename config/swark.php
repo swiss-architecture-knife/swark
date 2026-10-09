@@ -5,7 +5,7 @@ return [
         'prefix' => '',
     ],
     'content' => [
-        'path' => base_path(ENV('SWARK_CONTENT_PATH', 'storage/app/swark/_default')),
+        'path' => ENV('SWARK_CONTENT_PATH', 'storage/app/swark/_default'),
     ],
     'events' => [
         'hookable' => [
